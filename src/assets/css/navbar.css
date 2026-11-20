@@ -1,0 +1,121 @@
+.xwomen-navbar {
+  height: 88px;
+  min-height: 88px;
+  padding: 0;
+  border-bottom: 1px solid #e8ebee;
+  background-color: #fff;
+  box-shadow: 0 2px 12px rgb(16 24 40 / 6%);
+}
+
+.xwomen-navbar__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.xwomen-navbar__brand,
+.xwomen-navbar__actions,
+.xwomen-navbar__profile {
+  display: flex;
+  align-items: center;
+}
+
+.xwomen-navbar__brand {
+  gap: 0.75rem;
+}
+
+.xwomen-navbar__brand-name {
+  color: #1d2939;
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.xwomen-navbar__logo {
+  display: block;
+  width: 58px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.xwomen-navbar__actions {
+  gap: 0.75rem;
+}
+
+.xwomen-navbar__profile {
+  gap: 0.7rem;
+  padding: 0.35rem 0.85rem 0.35rem 0.4rem;
+  border: 1px solid #eef0f3;
+  border-radius: 999px;
+  background-color: #f8f9fb;
+}
+
+.xwomen-navbar__avatar {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 1px 3px rgb(16 24 40 / 16%);
+  object-fit: cover;
+}
+
+.xwomen-navbar__profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.xwomen-navbar__profile-name {
+  color: #344054;
+  font-size: 0.84rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.xwomen-navbar__logout {
+  display: inline-grid;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  place-items: center;
+  border: 1px solid #e4e7ec;
+  border-radius: 12px;
+  color: #667085;
+  background-color: #fff;
+  transition: color 150ms ease, border-color 150ms ease, background-color 150ms ease;
+}
+
+.xwomen-navbar__logout:hover {
+  border-color: #fecdca;
+  color: #d92d20;
+  background-color: #fef3f2;
+}
+
+.xwomen-navbar__logout:focus-visible {
+  outline: 3px solid rgb(217 45 32 / 25%);
+  outline-offset: 2px;
+}
+
+@media (max-width: 480px) {
+  .xwomen-navbar__profile-info {
+    display: none;
+  }
+
+  .xwomen-navbar__profile {
+    padding: 0.25rem;
+    border: 0;
+    background: transparent;
+  }
+
+  .xwomen-navbar__actions {
+    gap: 0.35rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .xwomen-navbar__logout {
+    transition: none;
+  }
+}
